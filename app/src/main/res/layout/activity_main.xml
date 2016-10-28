@@ -10,20 +10,40 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.a52cbdq.wajloc.MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:id="@+id/txtCity"
-        android:layout_below="@+id/btnCity"
-        android:layout_alignParentEnd="true" />
-
     <Button
         android:text="点击获取城市名"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnCity"
+        android:layout_marginStart="93dp"
         android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/txtCity"
+        android:text="利用GPS、网络、基站获取当前城市名称"
+        android:layout_below="@+id/btnCity"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="105dp" />
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:text="点击获取天气信息"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnWeather"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/btnCity" />
+
+    <TextView
+        android:text="在网站查询天气信息"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtWeather"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_below="@+id/btnWeather"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp" />
 </RelativeLayout>
